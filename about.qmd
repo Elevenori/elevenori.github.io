@@ -1,0 +1,24 @@
+---
+title: "About"
+about:
+    template: trestles
+    image: images/profile.jpg
+    links:
+      - icon: github
+        text: Github
+        href: https://github.com/Elevenori
+      - icon: linkedin
+        text: LinkedIn
+        href: https://www.linkedin.com/in/naixin-wang-521bb7134/ 
+---
+
+
+## Education
+
+- MSc Computer Science (Artificial Intelligence) - Leiden University, The Netherlands (2025–2027)
+- BSc Physics - Shanghai Normal University, China (2016–2020)
+- Post-University Education - University of Helsinki, Finland (2024–2025)
+
+## Experience
+
+What I've done

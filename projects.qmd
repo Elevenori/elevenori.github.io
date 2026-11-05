@@ -1,0 +1,11 @@
+---
+title: "Projects"
+image: images/profile.jpg
+about:
+  template: trestles
+---
+
+## Selected Projects
+
+My projects in Artificial Intelligence,
+Large Language Models, and Machine Learning.
