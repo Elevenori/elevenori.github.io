@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - files/naixin_wang_cv.pdf
 
 website:
   title: "Naixin Wang"
