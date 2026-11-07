@@ -11,7 +11,7 @@ My interests include Large Language Models (LLMs), Agentic AI, Natural Language 
 ## Website Structure
 
 - **Home** — Personal introduction
-- **About** — Education and professional background
+- **About** — Education, experience, and 🎁
 - **Projects** — Research and technical projects
 - **CV** — Curriculum Vitae
 - **Transcripts** — Transcripts of MSc first year
