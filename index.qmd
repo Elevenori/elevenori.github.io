@@ -19,5 +19,5 @@ Welcome to my personal website!
 
 I am currently pursuing a Master's degree in Artificial Intelligence at Leiden University. I hold a Bachelor's degree in Physics from Shanghai Normal University and have professional experience in Data Science and Machine Learning.
 
-My current interests include **Large Language Models (LLMs)**, **Agentic AI**, and **Machine Learning**.
+My current interests include **Large Language Models (LLMs)**, **Agentic AI**, **Natural Language Processing**, and **Machine Learning**.
 
