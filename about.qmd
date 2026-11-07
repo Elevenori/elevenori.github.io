@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Me"
 about:
     template: trestles
     image: images/profile.jpg
@@ -12,7 +12,6 @@ about:
         href: https://www.linkedin.com/in/naixin-wang-521bb7134/ 
 ---
 
-
 ## Education
 
 - MSc Computer Science (Artificial Intelligence) - Leiden University, The Netherlands (2025–2027)
@@ -21,4 +20,7 @@ about:
 
 ## Experience
 
-What I've done
+I previously worked as a Data Scientist and AI Specialist before, gaining professional experience in machine learning, predictive modeling, and data analytics. I have worked on recommendation systems, personalized advertising, and deep learning applications, using data-driven approaches to solve real-world business problems.
+
+## My Dog (Caesar)
+![](images/Caesar.jpg){width=350px}

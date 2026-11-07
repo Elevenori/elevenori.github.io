@@ -4,6 +4,7 @@ project:
   resources:
     - files/naixin_wang_cv.pdf
 
+
 website:
   title: "Naixin Wang"
   site-url: "https://elevenori.github.io"

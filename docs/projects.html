@@ -41,6 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -74,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -114,43 +144,141 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#selected-projects" id="toc-selected-projects" class="nav-link active" data-scroll-target="#selected-projects">Selected Projects</a></li>
+  <li><a href="#planning-and-reflection-for-agentic-llms" id="toc-planning-and-reflection-for-agentic-llms" class="nav-link active" data-scroll-target="#planning-and-reflection-for-agentic-llms">Planning and Reflection for Agentic LLMs</a></li>
+  <li><a href="#end-to-end-small-llm-development-with-nanochat" id="toc-end-to-end-small-llm-development-with-nanochat" class="nav-link" data-scroll-target="#end-to-end-small-llm-development-with-nanochat">End-to-End Small LLM Development with Nanochat</a></li>
+  <li><a href="#adversarial-curriculum-learning-for-autonomous-rover-navigation" id="toc-adversarial-curriculum-learning-for-autonomous-rover-navigation" class="nav-link" data-scroll-target="#adversarial-curriculum-learning-for-autonomous-rover-navigation">### Adversarial Curriculum Learning for Autonomous Rover Navigation</a></li>
+  <li><a href="#evolutionary-algorithm-on-black-box-problems" id="toc-evolutionary-algorithm-on-black-box-problems" class="nav-link" data-scroll-target="#evolutionary-algorithm-on-black-box-problems">Evolutionary Algorithm on Black-box Problems</a>
+  <ul class="collapse">
+  <li><a href="#implementation-and-evaluation-of-proximal-policy-optimization-ppo" id="toc-implementation-and-evaluation-of-proximal-policy-optimization-ppo" class="nav-link" data-scroll-target="#implementation-and-evaluation-of-proximal-policy-optimization-ppo">Implementation and Evaluation of Proximal Policy Optimization (PPO)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/profile.jpg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content column-page-left" id="quarto-document-content" tabindex="-1">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Projects</h1>
 </div>
-<div class="quarto-title-meta">
-  </div>
-</header>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content" tabindex="-1">
 
-<section id="selected-projects" class="level2">
-<h2 data-anchor-id="selected-projects">Selected Projects</h2>
-<p>My projects in Artificial Intelligence, Large Language Models, and Machine Learning.</p>
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="planning-and-reflection-for-agentic-llms" class="level2">
+<h2 class="anchored" data-anchor-id="planning-and-reflection-for-agentic-llms">Planning and Reflection for Agentic LLMs</h2>
+<p><code>Agent Evaluation</code> | <code>Brittleness</code> | <code>Harnessing</code> | <code>BALROG</code> | <code>ReAct</code> | <code>Reflection</code></p>
+<ul>
+<li>Built a reproducible BALROG evaluation pipeline for GPT-6.1-sol and Qwen3-4B-Instruct across BabyAI, TextWorld, and BabaIsAI, using seeded multi-episode experiments and automated performance reporting.</li>
+<li>Designed a ReAct-inspired language agent with dynamic planning, structured action generation, short-term memory, and explicit detection of repeated actions and state loops.</li>
+<li>Implemented and evaluated a Reflexion-style agent that converts trial outcomes into verbal memory, comparing matched with/without-reflection conditions using trial-level progression.</li>
+</ul>
+<div class="img-container" style="display: flex; gap: 2px; align-items: flex-start;">
+  <img src="./images/projects/BALROG_reflective_agent.png" alt="agent workflow" style="height: 300px; width: auto;">
+  <img src="./images/projects/BALROG_compare_agents.png" alt="agent comparison" style="height: 300px; width: auto;">
+</div>
+</section>
+<section id="end-to-end-small-llm-development-with-nanochat" class="level2">
+<h2 class="anchored" data-anchor-id="end-to-end-small-llm-development-with-nanochat">End-to-End Small LLM Development with Nanochat</h2>
+<p><code>LLM Training Pipeline</code> | <code>Instruction Fine-tuning</code> | <code>Model Evaluation</code> | <code>Nanochat</code> | <code>Tokenization</code></p>
+<ul>
+<li>Trained and compared 8K and 32K BPE tokenizers on 500MB of CLIMBMix data, then pre-trained a 13M-parameter Transformer while monitoring convergence through training and validation BPB.</li>
+<li>Designed a two-stage post-training pipeline using MMLU and GSM8K for capability-focused mid-training, followed by supervised fine-tuning on SmolTalk with assistant-only loss masking.</li>
+<li>Evaluated model checkpoints on ARC-Easy, ARC-Challenge, and GSM8K, analyzed domain shift and catastrophic forgetting, and tested temperature sampling and KV caching through a web inference interface.</li>
+</ul>
+<div class="img-container" style="display: flex; gap: 2px; align-items: flex-start;">
+  <img src="./images/projects/nanochat_bpe.png" alt="agent workflow" style="height: 250px; width: auto;">
+  <img src="./images/projects/nanochat_loss_masking.png" alt="agent comparison" style="height: 200px; width: auto;">
+</div>
+</section>
+<section id="adversarial-curriculum-learning-for-autonomous-rover-navigation" class="level2">
+<h2 class="anchored" data-anchor-id="adversarial-curriculum-learning-for-autonomous-rover-navigation">### Adversarial Curriculum Learning for Autonomous Rover Navigation</h2>
+<p><code>Reinforcement Learning</code> | <code>Proximal Policy Optimization</code> | <code>MuJoCo</code> | <code>Robotics</code></p>
+<ul>
+<li>Developed an autonomous rover navigation system using Proximal Policy Optimization (PPO) in MuJoCo, training a four-wheeled robot to navigate procedurally generated terrains with varying obstacles and difficulty levels.</li>
+<li>Designed an adversarial curriculum learning mechanism that dynamically adjusts terrain difficulty based on the agent’s success rate and failure patterns, enabling adaptive reinforcement learning.</li>
+<li>Evaluated the trained policy across different terrain difficulties, achieving a 100% success rate on flat terrain and 36.7% on moderately challenging terrain over 30 evaluation episodes per setting.</li>
+</ul>
+<p>
+<a href="https://github.com/Rahulrayy/Robotics_Project">Code</a>
+</p>
+<div class="img-container" style="display: flex; gap: 2px; align-items: flex-start;">
+  <img src="./images/projects/demo.png" alt="Rover mid-rollout image" style="height: 300px; width: auto;">
+</div>
+
+<div style="margin: 20px 0; max-width: 700px;">
+  <iframe width="100%" style="aspect-ratio: 16 / 9; border: 0; border-radius: 8px;" src="https://www.youtube.com/embed/WeDk9vNZHuE" title="Autonomous Rover Navigation Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+  </iframe>
+</div>
+
+<div class="img-container" style="display: flex; gap: 2px; align-items: flex-start;">
+  <img src="./images/projects/traj_easy.jpeg" alt="Rover trajectories at difficulty 0" style="height: 300px; width: auto;">
+</div>
+
+<div class="img-container" style="display: flex; justify-content: flex-start; gap: 10px; align-items: flex-start;">
+  <img src="./images/projects/traj_hard.jpeg" alt="Rover trajectories at difficulty 0.5" style="height: 300px; width: auto;">
+</div>
 
 
 </section>
-</main></div>
+<section id="evolutionary-algorithm-on-black-box-problems" class="level2">
+<h2 class="anchored" data-anchor-id="evolutionary-algorithm-on-black-box-problems">Evolutionary Algorithm on Black-box Problems</h2>
+<p><code>Genetic Algorithm</code> | <code>Evolutionary Strategy</code> | <code>Optimization</code> | <code>Black-box Problems</code></p>
+<ul>
+<li>Implemented Genetic Algorithm (GA) and self-adaptive <span class="math inline">\((\mu,\lambda)\)</span> Evolution Strategy (ES) from scratch for discrete and continuous optimization.</li>
+<li>Applied GA to <a href="https://iohprofiler.github.io/IOHexp/">LABS and N-Queens</a> <span class="citation" data-cites="IOHprofiler IOHanalyzer IOHexperimenter">[@IOHprofiler;@IOHanalyzer;@IOHexperimenter]</span>, and ES with log-normal step-size adaptation to the Katsuura problem.</li>
+<li>Designed a budget-aware, step-wise hyperparameter tuning strategy to efficiently identify promising configurations.</li>
+<li>Evaluated convergence and robustness using EAF, ECDF, and Expected Runtime (ERT) across multiple runs.</li>
+</ul>
+<div class="img-container" style="display: flex; justify-content: flex-start; gap: 10px; align-items: flex-start;">
+  <img src="./images/projects/ES-ERT.png" alt="algo comparison" width="70%">
 </div>
- <!-- /main -->
+<section id="implementation-and-evaluation-of-proximal-policy-optimization-ppo" class="level3">
+<h3 class="anchored" data-anchor-id="implementation-and-evaluation-of-proximal-policy-optimization-ppo">Implementation and Evaluation of Proximal Policy Optimization (PPO)</h3>
+<p><code>Reinforcement Learning</code> | <code>PPO</code> | <code>Actor-Critic</code> | <code>CartPole-v1</code> | <code>Hyperparameter Optimization</code></p>
+<ul>
+<li>Implemented Proximal Policy Optimization (PPO) based on the Actor-Critic framework, incorporating a clipped surrogate objective to stabilize policy updates in the CartPole-v1 environment.</li>
+<li>Conducted hyperparameter tuning and ablation studies on learning rates, network architectures, clipping thresholds, and training techniques to investigate their effects on convergence and training stability.</li>
+<li>Compared PPO against REINFORCE, Actor-Critic (AC), A2C, and DQN-based methods.</li>
+</ul>
+<div class="img-container" style="display: flex; gap: 2px; align-items: flex-start;">
+  <img src="./images/projects/PPO_normalize_returns_ablation_mean_only.png" alt="ppo_normalize_ablations" style="height: 300px; width: auto;">
+  <img src="images/projects/PPO_hyperparameter_ablations.png" alt="ppo_hyperparameter_ablations" style="height: 300px; width: auto;">
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

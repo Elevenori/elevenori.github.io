@@ -4,41 +4,69 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "My projects in Artificial Intelligence, Large Language Models, and Machine Learning."
+    "text": "Agent Evaluation | Brittleness | Harnessing | BALROG | ReAct | Reflection\n\nBuilt a reproducible BALROG evaluation pipeline for GPT-6.1-sol and Qwen3-4B-Instruct across BabyAI, TextWorld, and BabaIsAI, using seeded multi-episode experiments and automated performance reporting.\nDesigned a ReAct-inspired language agent with dynamic planning, structured action generation, short-term memory, and explicit detection of repeated actions and state loops.\nImplemented and evaluated a Reflexion-style agent that converts trial outcomes into verbal memory, comparing matched with/without-reflection conditions using trial-level progression."
   },
   {
-    "objectID": "projects.html#selected-projects",
-    "href": "projects.html#selected-projects",
+    "objectID": "projects.html#planning-and-reflection-for-agentic-llms",
+    "href": "projects.html#planning-and-reflection-for-agentic-llms",
     "title": "Projects",
     "section": "",
-    "text": "My projects in Artificial Intelligence, Large Language Models, and Machine Learning."
+    "text": "Agent Evaluation | Brittleness | Harnessing | BALROG | ReAct | Reflection\n\nBuilt a reproducible BALROG evaluation pipeline for GPT-6.1-sol and Qwen3-4B-Instruct across BabyAI, TextWorld, and BabaIsAI, using seeded multi-episode experiments and automated performance reporting.\nDesigned a ReAct-inspired language agent with dynamic planning, structured action generation, short-term memory, and explicit detection of repeated actions and state loops.\nImplemented and evaluated a Reflexion-style agent that converts trial outcomes into verbal memory, comparing matched with/without-reflection conditions using trial-level progression."
+  },
+  {
+    "objectID": "projects.html#end-to-end-small-llm-development-with-nanochat",
+    "href": "projects.html#end-to-end-small-llm-development-with-nanochat",
+    "title": "Projects",
+    "section": "End-to-End Small LLM Development with Nanochat",
+    "text": "End-to-End Small LLM Development with Nanochat\nLLM Training Pipeline | Instruction Fine-tuning | Model Evaluation | Nanochat | Tokenization\n\nTrained and compared 8K and 32K BPE tokenizers on 500MB of CLIMBMix data, then pre-trained a 13M-parameter Transformer while monitoring convergence through training and validation BPB.\nDesigned a two-stage post-training pipeline using MMLU and GSM8K for capability-focused mid-training, followed by supervised fine-tuning on SmolTalk with assistant-only loss masking.\nEvaluated model checkpoints on ARC-Easy, ARC-Challenge, and GSM8K, analyzed domain shift and catastrophic forgetting, and tested temperature sampling and KV caching through a web inference interface."
+  },
+  {
+    "objectID": "projects.html#adversarial-curriculum-learning-for-autonomous-rover-navigation",
+    "href": "projects.html#adversarial-curriculum-learning-for-autonomous-rover-navigation",
+    "title": "Projects",
+    "section": "### Adversarial Curriculum Learning for Autonomous Rover Navigation",
+    "text": "### Adversarial Curriculum Learning for Autonomous Rover Navigation\nReinforcement Learning | Proximal Policy Optimization | MuJoCo | Robotics\n\nDeveloped an autonomous rover navigation system using Proximal Policy Optimization (PPO) in MuJoCo, training a four-wheeled robot to navigate procedurally generated terrains with varying obstacles and difficulty levels.\nDesigned an adversarial curriculum learning mechanism that dynamically adjusts terrain difficulty based on the agent’s success rate and failure patterns, enabling adaptive reinforcement learning.\nEvaluated the trained policy across different terrain difficulties, achieving a 100% success rate on flat terrain and 36.7% on moderately challenging terrain over 30 evaluation episodes per setting.\n\n\nCode"
+  },
+  {
+    "objectID": "projects.html#evolutionary-algorithm-on-black-box-problems",
+    "href": "projects.html#evolutionary-algorithm-on-black-box-problems",
+    "title": "Projects",
+    "section": "Evolutionary Algorithm on Black-box Problems",
+    "text": "Evolutionary Algorithm on Black-box Problems\nGenetic Algorithm | Evolutionary Strategy | Optimization | Black-box Problems\n\nImplemented Genetic Algorithm (GA) and self-adaptive \\((\\mu,\\lambda)\\) Evolution Strategy (ES) from scratch for discrete and continuous optimization.\nApplied GA to LABS and N-Queens [@IOHprofiler;@IOHanalyzer;@IOHexperimenter], and ES with log-normal step-size adaptation to the Katsuura problem.\nDesigned a budget-aware, step-wise hyperparameter tuning strategy to efficiently identify promising configurations.\nEvaluated convergence and robustness using EAF, ECDF, and Expected Runtime (ERT) across multiple runs.\n\n\n  \n\n\nImplementation and Evaluation of Proximal Policy Optimization (PPO)\nReinforcement Learning | PPO | Actor-Critic | CartPole-v1 | Hyperparameter Optimization\n\nImplemented Proximal Policy Optimization (PPO) based on the Actor-Critic framework, incorporating a clipped surrogate objective to stabilize policy updates in the CartPole-v1 environment.\nConducted hyperparameter tuning and ablation studies on learning rates, network architectures, clipping thresholds, and training techniques to investigate their effects on convergence and training stability.\nCompared PPO against REINFORCE, Actor-Critic (AC), A2C, and DQN-based methods."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Me",
     "section": "",
     "text": "MSc Computer Science (Artificial Intelligence) - Leiden University, The Netherlands (2025–2027)\nBSc Physics - Shanghai Normal University, China (2016–2020)\nPost-University Education - University of Helsinki, Finland (2024–2025)"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
-    "title": "About",
+    "title": "Me",
     "section": "",
     "text": "MSc Computer Science (Artificial Intelligence) - Leiden University, The Netherlands (2025–2027)\nBSc Physics - Shanghai Normal University, China (2016–2020)\nPost-University Education - University of Helsinki, Finland (2024–2025)"
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
-    "title": "About",
+    "title": "Me",
     "section": "Experience",
-    "text": "Experience\nWhat I’ve done"
+    "text": "Experience\nI previously worked as a Data Scientist and AI Specialist before, gaining professional experience in machine learning, predictive modeling, and data analytics. I have worked on recommendation systems, personalized advertising, and deep learning applications, using data-driven approaches to solve real-world business problems."
+  },
+  {
+    "objectID": "about.html#my-dog-caesar",
+    "href": "about.html#my-dog-caesar",
+    "title": "Me",
+    "section": "My Dog (Caesar)",
+    "text": "My Dog (Caesar)"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Naixin Wang",
     "section": "",
-    "text": "MSc Artificial Intelligence | Leiden University\nWelcome to my personal website!\nI am currently pursuing a Master’s degree in Artificial Intelligence at Leiden University. I hold a Bachelor’s degree in Physics from Shanghai Normal University and have professional experience in Data Science and Machine Learning.\nMy current interests include Large Language Models (LLMs), Agentic AI, and Machine Learning, particularly in developing and evaluating intelligent systems."
+    "text": "MSc Artificial Intelligence | Leiden University\nWelcome to my personal website!\nI am currently pursuing a Master’s degree in Artificial Intelligence at Leiden University. I hold a Bachelor’s degree in Physics from Shanghai Normal University and have professional experience in Data Science and Machine Learning.\nMy current interests include Large Language Models (LLMs), Agentic AI, and Machine Learning."
   }
 ]
