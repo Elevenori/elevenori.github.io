@@ -7,9 +7,11 @@ project:
 
 website:
   title: "Naixin Wang"
+  favicon: images/favicon.jpg
   site-url: "https://elevenori.github.io"
   navbar:
     title: false
+    logo: images/favicon.jpg
     left:
       - text: Home
         href: index.qmd
