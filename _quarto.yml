@@ -19,6 +19,8 @@ website:
         href: projects.qmd
       - text: CV
         href: /files/naixin_wang_cv.pdf
+      - text: Transcripts
+        href: /files/Transcripts.pdf
 
 format:
   html:
