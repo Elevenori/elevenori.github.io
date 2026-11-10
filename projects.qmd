@@ -36,7 +36,7 @@ format:
 ```
 
 
-## ### Adversarial Curriculum Learning for Autonomous Rover Navigation
+## Adversarial Curriculum Learning for Autonomous Rover Navigation
 
 `Reinforcement Learning` | `Proximal Policy Optimization` | `MuJoCo` | `Robotics`
 
@@ -86,7 +86,7 @@ format:
 </div>
 ```
 
-### Implementation and Evaluation of Proximal Policy Optimization (PPO)
+## Implementation and Evaluation of Proximal Policy Optimization (PPO)
 
 `Reinforcement Learning` | `PPO` | `Actor-Critic` | `CartPole-v1` | `Hyperparameter Optimization`
 
